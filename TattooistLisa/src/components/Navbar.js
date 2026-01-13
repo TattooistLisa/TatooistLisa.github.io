@@ -1,7 +1,7 @@
 import React from 'react';
 import './Css/Navbar.css';
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import nova from '../images/NovaPHC.png';
+import Logo from '../images/TattoistLisaLogo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -13,8 +13,7 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <a className="navbar-brand" href="#">
-                    <img className="navbar-logo" src={nova} alt="Nova" />
-                    Nova Public Health Consulting
+                    <img className="navbar-logo" src={Logo} alt="Tattoist Lisa Logo" />
                 </a>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
