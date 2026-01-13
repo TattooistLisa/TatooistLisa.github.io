@@ -1,7 +1,7 @@
 {
-  "name": "TatooistLisa",
+  "name": "TattooistLisa",
   "version": "0.1.0",
-  "homepage": "https://TatooistLisa.github.io",
+  "homepage": "https://TattooistLisa.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
