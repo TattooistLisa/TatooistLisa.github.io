@@ -30,12 +30,12 @@ const Contact = () => {
                             display: 'flex',
                             alignItems: 'center',
                             gap: 1.5,
-                            color: '#BB6868' ,
+                            color: '#31312C' ,
                             fontFamily: 'Alumni Sans',
                         }}
                     >
                         <InstagramIcon style={{ width: 24, height: 24, display: 'block' }} />
-                        <Typography fontSize={18} sx={{ color: 'black', lineHeight: 1, '&:hover': { color: '#BB6868' } }}>tattooist__lisaa</Typography>
+                        <Typography fontSize={18} sx={{ color: '#31312C', lineHeight: 1, '&:hover': { color: '#BB6868' } }}>tattooist__lisaa</Typography>
                     </Link>
 
                     <Link
@@ -46,12 +46,12 @@ const Contact = () => {
                             display: 'flex',
                             alignItems: 'center',
                             gap: 1.5,
-                            color: '#BB6868',
+                            color: '#31312C',
                             fontFamily: 'Alumni Sans',
                         }}
                     >
                         <MailIcon style={{ width: 24, height: 24, display: 'block' }} />
-                        <Typography fontSize={18} sx={{ color: 'black', lineHeight: 1, '&:hover': { color: '#BB6868' } }}>tattooistlisaa@gmail.com</Typography>
+                        <Typography fontSize={18} sx={{ color: '#31312C', lineHeight: 1, '&:hover': { color: '#BB6868' } }}>tattooistlisaa@gmail.com</Typography>
                     </Link>
                 </Stack>
             </Container>
