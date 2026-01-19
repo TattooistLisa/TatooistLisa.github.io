@@ -60,7 +60,7 @@ const Header = () => {
                         variant="contained"
                         sx={{
                             backgroundColor: 'white',
-                            color: '#8A2A35',
+                            color: '#BB6868',
                             fontSize: { xs: '0.65rem', sm: '0.85rem', md: '1rem' },
                             px: { xs: 1.5, sm: 2, md: 3 },
                             py: { xs: 0.5, sm: 1 },
@@ -79,7 +79,7 @@ const Header = () => {
                         variant="contained"
                         sx={{
                             backgroundColor: 'white',
-                            color: '#8A2A35',
+                            color: '#BB6868',
                             fontSize: { xs: '0.65rem', sm: '0.85rem', md: '1rem' },
                             px: { xs: 1.5, sm: 2, md: 3 },
                             py: { xs: 0.5, sm: 1 },

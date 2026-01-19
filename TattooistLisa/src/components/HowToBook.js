@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Box, Container, Typography } from '@mui/material';
 import BWsingle2 from '../lisaImages/BWsingle2.jpg';
 
-const accentColor = '#8A2A35';
+const accentColor = '#BB6868';
 const fontFamily = '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 
 const Highlight = ({ children }) => (
@@ -61,7 +61,7 @@ const HowToBook = () => {
             </Box>
 
             <Container maxWidth="sm" sx={{ py: 5, fontFamily: fontFamily, fontWeight: 400, '& .MuiTypography-root': { fontFamily: 'inherit' } }}>
-                <Typography align="center" sx={{ mb: 3, fontWeight: 600, color: accentColor }}>
+                <Typography align="center" sx={{ mb: 3, fontWeight: 600, color: '#8A2A35' }}>
                     All booking is done through my Instagram!
                 </Typography>
 

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Box, Container, Typography } from '@mui/material';
 import BWsingle from '../lisaImages/BWsingle.jpg';
 
-const accentColor = '#8A2A35';
+const accentColor = '#BB6868';
 const fontFamily = '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 
 const Highlight = ({ children }) => (
@@ -61,7 +61,7 @@ const Aftercare = () => {
             </Box>
 
             <Container maxWidth="sm" sx={{ py: 5, fontFamily: fontFamily, fontWeight: 400, '& .MuiTypography-root': { fontFamily: 'inherit' } }}>
-                <Typography variant="h5" align="center" sx={{ mb: 3, color: accentColor, fontWeight: 500 }}>
+                <Typography variant="h5" align="center" sx={{ mb: 3, color: '#8A2A35', fontWeight: 500 }}>
                     How to Heal your Tattoo
                 </Typography>
 
