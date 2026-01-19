@@ -30,8 +30,8 @@ const Contact = () => {
                             display: 'flex',
                             alignItems: 'center',
                             gap: 1.5,
-                            color: '#8b7355',
-                            '&:hover': { color: '#6d5a45' }
+                            color: '#8A2A35',
+                            '&:hover': { color: '#6d2129' }
                         }}
                     >
                         <InstagramIcon />
@@ -45,8 +45,8 @@ const Contact = () => {
                             display: 'flex',
                             alignItems: 'center',
                             gap: 1.5,
-                            color: '#8b7355',
-                            '&:hover': { color: '#6d5a45' }
+                            color: '#8A2A35',
+                            '&:hover': { color: '#6d2129' }
                         }}
                     >
                         <EmailIcon />

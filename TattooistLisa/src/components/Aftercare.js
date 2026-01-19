@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { Box, Container, Typography, List, ListItem } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import BWsingle from '../lisaImages/BWsingle.jpg';
 
-const accentColor = '#8b7355';
+const accentColor = '#8A2A35';
 
 const Highlight = ({ children }) => (
     <Box component="span" sx={{ color: accentColor, fontWeight: 500 }}>
@@ -59,72 +59,50 @@ const Aftercare = () => {
                 </Box>
             </Box>
 
-            <Container maxWidth="md" sx={{ py: 5 }}>
-                <Typography variant="h5" sx={{ mb: 3, color: accentColor, fontWeight: 500 }}>
+            <Container maxWidth="sm" sx={{ py: 5 }}>
+                <Typography variant="h5" align="center" sx={{ mb: 3, color: accentColor, fontWeight: 500 }}>
                     How to Heal your Tattoo
                 </Typography>
 
-                <List sx={{ listStyleType: 'disc', pl: 2 }}>
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            Leave your bandage on for <Highlight>one day or 4-10 hours</Highlight>. When you're ready to take it off, make sure your hands are clean. Do it under <Highlight>warm running water, gently pulling the bandage down, not up.</Highlight>
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • Leave your bandage on for <Highlight>one day or 4-10 hours</Highlight>. When you're ready to take it off, make sure your hands are clean. Do it under <Highlight>warm running water, gently pulling the bandage down, not up.</Highlight>
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            Use a <Highlight>gentle, fragrance-free soap</Highlight> to clean off any ink, plasma, or debris. Be gentle and don't scrub! After pat it dry with a clean paper towel, or just let it air dry.
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • Use a <Highlight>gentle, fragrance-free soap</Highlight> to clean off any ink, plasma, or debris. Be gentle and don't scrub! After pat it dry with a clean paper towel, or just let it air dry.
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            After it's dry use a thin layer of <Highlight>shea butter</Highlight> to moisturize (Palmer's fragrance free cocoa butter works great). If you don't have any of this you can use <Highlight>fragrance free lotion</Highlight> like Cetaphil. Just a thin layer of moisturizer is enough, don't overdo it.
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • After it's dry use a thin layer of <Highlight>shea butter</Highlight> to moisturize (Palmer's fragrance free cocoa butter works great). If you don't have any of this you can use <Highlight>fragrance free lotion</Highlight> like Cetaphil. Just a thin layer of moisturizer is enough, don't overdo it.
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            Avoid ointments like Aquaphor as they have petroleum which can clog pores and suffocate the tattoo.
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • Avoid ointments like Aquaphor as they have petroleum which can clog pores and suffocate the tattoo.
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            <Highlight>Keep moisturizing and cleaning</Highlight> your tattoo <Highlight>daily.</Highlight>
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • <Highlight>Keep moisturizing and cleaning</Highlight> your tattoo <Highlight>daily.</Highlight>
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            After <Highlight>3-4 days</Highlight> the tattoo may scab and peel that's completely normal at this point you can switch from the shea butter to a lighter fragrance free lotion like cetaphil and apply whenever it's dry.
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • After <Highlight>3-4 days</Highlight> the tattoo may scab and peel that's completely normal at this point you can switch from the shea butter to a lighter fragrance free lotion like cetaphil and apply whenever it's dry.
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            Do not pick at the scabs or itch.
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • Do not pick at the scabs or itch.
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            Keep up the daily cleaning and moisturizing until it's fully healed, which usually around <Highlight>2 weeks.</Highlight>
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • Keep up the daily cleaning and moisturizing until it's fully healed, which usually around <Highlight>2 weeks.</Highlight>
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            While your tattoo is healing <Highlight>avoid</Highlight> swimming, bathing, excessive sweating, tight clothing and direct sunlight.
-                        </Typography>
-                    </ListItem>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • While your tattoo is healing <Highlight>avoid</Highlight> swimming, bathing, excessive sweating, tight clothing and direct sunlight.
+                </Typography>
 
-                    <ListItem sx={{ display: 'list-item', pl: 0 }}>
-                        <Typography>
-                            Once it's healed, <Highlight>keep moisturizing daily and use sunscreen</Highlight> to keep the vibrancy!
-                        </Typography>
-                    </ListItem>
-                </List>
+                <Typography align="center" sx={{ mb: 3 }}>
+                    • Once it's healed, <Highlight>keep moisturizing daily and use sunscreen</Highlight> to keep the vibrancy!
+                </Typography>
             </Container>
         </>
     );
