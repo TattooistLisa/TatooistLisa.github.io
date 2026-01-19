@@ -54,19 +54,10 @@ const Navbar = () => {
 
     return (
         <>
-            <AppBar position="sticky" sx={{ backgroundColor: '#1a2a4f', boxShadow: 'none', zIndex: 1000 }}>
+            <AppBar position="sticky" sx={{ backgroundColor: 'white', boxShadow: 'none', zIndex: 1000 }}>
                 <Container maxWidth="lg">
-                    <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
-                        {isMobile && (
-                            <IconButton
-                                color="inherit"
-                                aria-label="open drawer"
-                                edge="start"
-                                onClick={handleDrawerToggle}
-                            >
-                                <MenuIcon />
-                            </IconButton>
-                        )}
+                    <Toolbar disableGutters sx={{ justifyContent: 'center' }}>
+                       
 
                         <Link to="/">
                             <Box
@@ -77,21 +68,7 @@ const Navbar = () => {
                             />
                         </Link>
 
-                        {!isMobile && (
-                            <Box sx={{ display: 'flex', gap: 2 }}>
-                                {navItems.map((item) => (
-                                    <Button
-                                        key={item.label}
-                                        component={item.isLink ? Link : 'a'}
-                                        to={item.isLink ? item.to : undefined}
-                                        href={!item.isLink ? item.to : undefined}
-                                        sx={{ color: 'white' }}
-                                    >
-                                        {item.label}
-                                    </Button>
-                                ))}
-                            </Box>
-                        )}
+                       
                     </Toolbar>
                 </Container>
             </AppBar>
