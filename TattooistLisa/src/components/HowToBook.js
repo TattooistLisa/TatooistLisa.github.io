@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import './Css/Team.css';
 import { Container, Grid, Box, Typography } from '@mui/material';
 import waterImage from '../images/water.jpg';
-import PaytonImage from '../images/payton.jpg';
+import BWsingle2 from '../lisaImages/BWsingle2.jpg';
 
 const HowToBook = () => {
     useEffect(() => {
@@ -10,24 +10,51 @@ const HowToBook = () => {
     }, []);
     return (
         <>
+      <Box
+            component="header"
+            sx={{
+                position: 'relative',
+                width: '100%',
+                overflow: 'hidden'
+            }}
+        >
+            {/* Image - always shows full, scales with screen */}
             <Box
-                component="header"
+                component="img"
+                src={BWsingle2}
+                alt="Lisa Tattoo Artist"
                 sx={{
-                    backgroundImage: `url(${waterImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block'
+                }}
+            />
+
+            {/* Content overlay - positioned on top of image */}
+            <Box
+                sx={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
                     color: 'white',
                     textAlign: 'center',
-                    py: 5
+                    width: '90%'
                 }}
             >
-                <Container>
-                    <Box className="header-content">
-                        <Typography variant="h2" component="h1">Our Team</Typography>
-                    </Box>
-                </Container>
+                <Typography
+                    variant="h2"
+                    component="h1"
+                    sx={{
+                        mb: { xs: 1, sm: 2, md: 4 },
+                        fontSize: { xs: '1.2rem', sm: '2rem', md: '3rem', lg: '3.75rem' },
+                        textShadow: '2px 2px 4px rgba(0,0,0,0.7)'
+                    }}
+                >
+                    HOW TO BOOK
+                </Typography>
             </Box>
-            <section className="team" id="team">
+        </Box>
 
             <Container maxWidth="lg">
                     <Grid container spacing={3}>
@@ -51,14 +78,7 @@ const HowToBook = () => {
                       
 
                     </Grid>
-                    <Grid size={{ xs: 12, md: 6 }} className="image-col">
-                        <Box
-                            component="img"
-                            src={PaytonImage}
-                            alt="Payton Rigert"
-                            sx={{ width: '100%', maxWidth: '100%', height: 'auto' }}
-                        />
-                    </Grid>
+                   
                     <Grid size={12}>
                         
                         
@@ -126,7 +146,6 @@ const HowToBook = () => {
                 </Grid>
             </Container>
               
-        </section>
         </>
     );
 };
