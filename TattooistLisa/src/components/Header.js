@@ -50,9 +50,10 @@ const Header = () => {
                     LAKEWOOD, WA
                 </Typography>
                 <Stack
-                    direction="row"
+                    direction="column"
                     spacing={{ xs: 1, sm: 2 }}
                     justifyContent="center"
+                    alignItems="center"
                 >
                     <Button
                         component={Link}
@@ -62,9 +63,9 @@ const Header = () => {
                             backgroundColor: 'white',
                             color: '#BB6868',
                             fontSize: 18,
-                            px: { xs: 1.5, sm: 2, md: 3 },
-                            py: { xs: 0.5, sm: 1 },
-                            minWidth: 'auto',
+                            px: 1.5,
+                            py: 0.25,
+                            width: 120,
                             textDecoration: 'none',
                             borderRadius: '50px',
                             '&:hover': { backgroundColor: '#f0f0f0' },
@@ -81,9 +82,9 @@ const Header = () => {
                             backgroundColor: 'white',
                             color: '#BB6868',
                             fontSize: 18,
-                            px: { xs: 1.5, sm: 2, md: 3 },
-                            py: { xs: 0.5, sm: 1 },
-                            minWidth: 'auto',
+                            px: 1.5,
+                            py: 0.25,
+                            width: 120,
                             textDecoration: 'none',
                             borderRadius: '50px',
                             '&:hover': { backgroundColor: '#f0f0f0' },
