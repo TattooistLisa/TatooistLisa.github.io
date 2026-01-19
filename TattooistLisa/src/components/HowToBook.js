@@ -77,10 +77,10 @@ const HowToBook = () => {
                     • <Highlight>Deposit is required</Highlight> to book and will be subtracted from your total at your appointment
                 </Typography>
                 <Typography align="center" sx={{ mb: 1 }}>
-                    ○ <Highlight>Deposits are non refundable</Highlight>
+                    • <Highlight>Deposits are non refundable</Highlight>
                 </Typography>
                 <Typography align="center" sx={{ mb: 3 }}>
-                    ○ <Highlight>Cancellation or no show will forfeit the deposit</Highlight>
+                    • <Highlight>Cancellation or no show will forfeit the deposit</Highlight>
                 </Typography>
 
                 <Typography align="center" sx={{ mb: 3 }}>
