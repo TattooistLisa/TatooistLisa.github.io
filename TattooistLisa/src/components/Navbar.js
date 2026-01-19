@@ -59,7 +59,7 @@ const Navbar = () => {
                     <Toolbar disableGutters sx={{ justifyContent: 'center' }}>
                        
 
-                        <Link to="/">
+                        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                             <Box
                                 component="img"
                                 src={Logo}
@@ -72,19 +72,6 @@ const Navbar = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-
-            <Drawer
-                variant="temporary"
-                open={mobileOpen}
-                onClose={handleDrawerToggle}
-                ModalProps={{ keepMounted: true }}
-                sx={{
-                    display: { xs: 'block', md: 'none' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240 },
-                }}
-            >
-                {drawer}
-            </Drawer>
         </>
     );
 };
