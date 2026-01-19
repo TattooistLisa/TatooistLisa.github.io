@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import Layout from './components/Layout.js'
 import HowToBook from './components/HowToBook.js'
 import Aftercare from './components/Aftercare.js'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
@@ -19,7 +19,7 @@ export default function App() {
                     <Route path="*" element="Page Not Found" />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
