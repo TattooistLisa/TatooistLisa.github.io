@@ -42,8 +42,8 @@ const Header = () => {
                     variant="h2"
                     component="h1"
                     sx={{
-                        mb: { xs: 1, sm: 2, md: 4 },
-                        fontSize: { xs: '1.5rem', sm: '2.5rem', md: '4rem', lg: '5rem' },
+                        mb:  1,
+                        fontSize: 40,
                         fontFamily: '"Annie Use Your Telescope", cursive',
                     }}
                 >
@@ -61,7 +61,7 @@ const Header = () => {
                         sx={{
                             backgroundColor: 'white',
                             color: '#BB6868',
-                            fontSize: { xs: '0.65rem', sm: '0.85rem', md: '1rem' },
+                            fontSize: 18,
                             px: { xs: 1.5, sm: 2, md: 3 },
                             py: { xs: 0.5, sm: 1 },
                             minWidth: 'auto',
@@ -80,7 +80,7 @@ const Header = () => {
                         sx={{
                             backgroundColor: 'white',
                             color: '#BB6868',
-                            fontSize: { xs: '0.65rem', sm: '0.85rem', md: '1rem' },
+                            fontSize: 18,
                             px: { xs: 1.5, sm: 2, md: 3 },
                             py: { xs: 0.5, sm: 1 },
                             minWidth: 'auto',

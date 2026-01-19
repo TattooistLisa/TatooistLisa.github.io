@@ -51,7 +51,7 @@ const HowToBook = () => {
                         variant="h2"
                         component="h1"
                         sx={{
-                            fontSize: { xs: '1.5rem', sm: '2.5rem', md: '4rem', lg: '5rem' },
+                            fontSize: 40,
                             fontFamily: '"Annie Use Your Telescope", cursive',
                         }}
                     >
