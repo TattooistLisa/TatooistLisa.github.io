@@ -4,8 +4,8 @@ import './index.css';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import Layout from './components/Layout.js'
-import Team from './components/Team.js'
-
+import HowToBook from './components/HowToBook.js'
+import Aftercare from './components/Aftercare.js'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -14,7 +14,8 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
-                    <Route path="team" element={<Team/>} />
+                    <Route path="HowToBook" element={<HowToBook/>} />
+                    <Route path="Aftercare" element={<Aftercare/>} />
                     <Route path="*" element="Page Not Found" />
                 </Route>
             </Routes>

@@ -4,7 +4,7 @@ import { Container, Grid, Box, Typography } from '@mui/material';
 import waterImage from '../images/water.jpg';
 import PaytonImage from '../images/payton.jpg';
 
-const Team = () => {
+const HowToBook = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -131,4 +131,4 @@ const Team = () => {
     );
 };
 
-export default Team;
+export default HowToBook;
