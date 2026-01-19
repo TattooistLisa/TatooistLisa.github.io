@@ -51,7 +51,6 @@ const HowToBook = () => {
                         component="h1"
                         sx={{
                             fontSize: { xs: '1.2rem', sm: '2rem', md: '3rem', lg: '3.75rem' },
-                            textShadow: '2px 2px 4px rgba(255, 255, 255, 0.7)'
                         }}
                     >
                         HOW TO BOOK

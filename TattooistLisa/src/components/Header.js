@@ -44,7 +44,6 @@ const Header = () => {
                     sx={{
                         mb: { xs: 1, sm: 2, md: 4 },
                         fontSize: { xs: '1.2rem', sm: '2rem', md: '3rem', lg: '3.75rem' },
-                        textShadow: '2px 2px 4px rgba(0,0,0,0.7)'
                     }}
                 >
                     LAKEWOOD, WA
