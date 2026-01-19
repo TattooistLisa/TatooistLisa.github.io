@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Box, Container, Typography } from '@mui/material';
+import React, { useEffect, useState } from "react";
+import { Box, Container, Typography, CircularProgress } from '@mui/material';
 import BWsingle2 from '../lisaImages/BWsingle2.jpg';
 
 const accentColor = '#BB6868';
@@ -12,9 +12,26 @@ const Highlight = ({ children }) => (
 );
 
 const HowToBook = () => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    if (!imageLoaded) {
+        return (
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+                <CircularProgress sx={{ color: '#BB6868' }} />
+                <Box
+                    component="img"
+                    src={BWsingle2}
+                    alt=""
+                    onLoad={() => setImageLoaded(true)}
+                    sx={{ display: 'none' }}
+                />
+            </Box>
+        );
+    }
 
     return (
         <>

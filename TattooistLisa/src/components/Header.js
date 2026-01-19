@@ -1,30 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Css/Header.css';
 import lisaImage from '../lisaImages/lisa.jpg';
-import { Box, Typography, Button, Stack } from '@mui/material';
+import { Box, Typography, Button, Stack, CircularProgress } from '@mui/material';
 
 const Header = () => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
     return (
-        <Box
-            component="header"
-            sx={{
-                position: 'relative',
-                width: '100%',
-                overflow: 'hidden'
-            }}
-        >
-            {/* Image - always shows full, scales with screen */}
+        <>
+            {!imageLoaded (
+                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+                    <CircularProgress sx={{ color: '#BB6868' }} />
+                </Box>
+            )}
             <Box
-                component="img"
-                src={lisaImage}
-                alt="Lisa Tattoo Artist"
+                component="header"
                 sx={{
+                    position: 'relative',
                     width: '100%',
-                    height: 'auto',
-                    display: 'block'
+                    overflow: 'hidden',
+                    display: imageLoaded ? 'block' : 'none'
                 }}
-            />
+            >
+                {/* Image - always shows full, scales with screen */}
+                <Box
+                    component="img"
+                    src={lisaImage}
+                    alt="Lisa Tattoo Artist"
+                    onLoad={() => setImageLoaded(true)}
+                    sx={{
+                        width: '100%',
+                        height: 'auto',
+                        display: 'block'
+                    }}
+                />
 
             {/* Content overlay - positioned on top of image */}
             <Box
@@ -92,6 +102,7 @@ const Header = () => {
                 </Stack>
             </Box>
         </Box>
+        </>
     );
 };
 
