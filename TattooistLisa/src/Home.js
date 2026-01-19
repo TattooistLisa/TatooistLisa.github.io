@@ -23,7 +23,6 @@ const Home = () => {
                     display: 'block'
                 }}
             />
-            <Footer />
         </div>
     );
 };
