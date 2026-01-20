@@ -102,8 +102,6 @@ const Aftercare = () => {
                     <video
                         src={TattooHealVideo}
                         controls
-                        autoPlay
-                        muted
                         loop
                         playsInline
                         style={{
