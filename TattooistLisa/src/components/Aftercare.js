@@ -21,11 +21,32 @@ const Aftercare = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    // Check if video is already loaded (cached)
+    // Handle video loading for iOS Safari compatibility
     useEffect(() => {
-        if (videoRef.current && videoRef.current.readyState >= 2) {
+        const video = videoRef.current;
+        if (!video) return;
+
+        const handleReady = () => setVideoReady(true);
+
+        // Check if already loaded (cached)
+        if (video.readyState >= 2) {
             setVideoReady(true);
+            return;
         }
+
+        // Multiple event listeners for cross-browser compatibility
+        video.addEventListener('loadeddata', handleReady);
+        video.addEventListener('loadedmetadata', handleReady);
+        video.addEventListener('canplay', handleReady);
+
+        // Force load on iOS Safari (must be called after element is in DOM)
+        video.load();
+
+        return () => {
+            video.removeEventListener('loadeddata', handleReady);
+            video.removeEventListener('loadedmetadata', handleReady);
+            video.removeEventListener('canplay', handleReady);
+        };
     }, [imageLoaded]);
 
     if (!imageLoaded) {
@@ -113,11 +134,12 @@ const Aftercare = () => {
                     )}
                     <video
                         ref={videoRef}
-                        src={TattooHealVideo}
+                        src={`${TattooHealVideo}#t=0.001`}
                         controls
                         loop
                         playsInline
-                        onLoadedData={() => setVideoReady(true)}
+                        muted
+                        preload="metadata"
                         style={{
                             width: '100%',
                             height: 'auto',
