@@ -52,7 +52,7 @@ const Aftercare = () => {
     return (
         <>
             {/* Loading overlay */}
-            {!imageLoaded && (
+            {!imageLoaded && !videoReady &&(
                 <Box sx={{
                     position: 'fixed',
                     top: 0,
@@ -126,16 +126,6 @@ const Aftercare = () => {
                         backgroundColor: videoReady ? 'transparent' : '#f5f5f5',
                     }}
                 >
-                    {!videoReady && (
-                        <Box sx={{
-                            position: 'absolute',
-                            top: '50%',
-                            left: '50%',
-                            transform: 'translate(-50%, -50%)'
-                        }}>
-                            <CircularProgress sx={{ color: '#BB6868' }} />
-                        </Box>
-                    )}
                     <video
                         ref={videoRef}
                         src={`${TattooHealVideo}#t=0.001`}
