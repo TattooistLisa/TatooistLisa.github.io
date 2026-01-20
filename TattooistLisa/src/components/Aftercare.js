@@ -138,7 +138,6 @@ const Aftercare = () => {
                         controls
                         loop
                         playsInline
-                        muted
                         preload="metadata"
                         style={{
                             width: '100%',
