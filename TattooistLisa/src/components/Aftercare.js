@@ -20,9 +20,7 @@ const Aftercare = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const isLoading = !imageLoaded || !videoReady;
-
-    if (isLoading) {
+    if (!imageLoaded) {
         return (
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
                 <CircularProgress sx={{ color: '#BB6868' }} />
@@ -32,13 +30,6 @@ const Aftercare = () => {
                     alt=""
                     onLoad={() => setImageLoaded(true)}
                     sx={{ display: 'none' }}
-                />
-                <video
-                    src={TattooHealVideo}
-                    onCanPlay={() => setVideoReady(true)}
-                    muted
-                    playsInline
-                    style={{ display: 'none' }}
                 />
             </Box>
         );
@@ -97,17 +88,31 @@ const Aftercare = () => {
                         borderRadius: 4,
                         overflow: 'hidden',
                         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
+                        position: 'relative',
+                        minHeight: videoReady ? 'auto' : 400,
+                        backgroundColor: videoReady ? 'transparent' : '#f5f5f5',
                     }}
                 >
+                    {!videoReady && (
+                        <Box sx={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)'
+                        }}>
+                            <CircularProgress sx={{ color: '#BB6868' }} />
+                        </Box>
+                    )}
                     <video
                         src={TattooHealVideo}
                         controls
                         loop
                         playsInline
+                        onLoadedData={() => setVideoReady(true)}
                         style={{
                             width: '100%',
                             height: 'auto',
-                            display: 'block',
+                            display: videoReady ? 'block' : 'none',
                         }}
                     />
                 </Box>
